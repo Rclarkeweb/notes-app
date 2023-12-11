@@ -1,0 +1,48 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="main">
+        <div class="left">
+            <h1>Notes</h1>
+        </div>
+
+        <div class="right">
+            <form action="/new" method="get">
+                <input type="submit" id="newNote" value="+" />
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid px-4 py-2">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
+            <% notes.forEach(note=> { %>
+
+                <div class="col ">
+                    <div class="card p-3 pb-3 bg-secondary-subtle rounded-4">
+                        <div class="note-edit">
+                            <form action="/view/<%= note.id %>" method="get">
+                                <input type="submit" class="editbtn" value="View" />
+                            </form>
+                        </div>
+
+                        <div class="note-title">
+                            <%=note.title%>
+                        </div>
+                        <div class="note-body">
+                            <%=note.note%>
+                        </div>
+                        <div class="note-date">
+                            <%=note.date.toDateString() %>
+                                <form action="/delete/<%= note.id %>" method="post">
+                                    <input type="submit" class="delbtn" value="Delete" />
+                                </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <% }); %>
+        </div>
+    </div>
+
+
+    <%- include("partials/footer.ejs") %>

@@ -1,0 +1,200 @@
+body {
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+}
+
+
+/* ----------- TEXT ----------- */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 20px;
+    font-size: 80px;
+}
+
+.error {
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    font-size: 25px;
+    margin: 2px 2px 20px 25px;
+}
+
+
+/* ----------- SECTIONS ----------- */
+
+#newNote {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 90%;
+    cursor: pointer;
+    border: none;
+}
+
+.main {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.left {
+    float: inline-start;
+}
+
+.right {
+    float: inline-end;
+    margin-right: 30px;
+}
+
+
+.fact-section {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.fact {
+    margin: 10px;
+}
+
+.note {
+    position: relative;
+    /* margin: 20px;
+    width: 33%; */
+    padding: 15px;
+    background-color: rgb(184, 184, 184);
+    height: 100%;
+}
+
+.note-edit {
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.note-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.note-body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+.note-date {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(63, 63, 63);
+    border-top: 1px solid rgb(126, 126, 126);
+    margin-top: 15px;
+    padding-top: 5px;
+    height: auto;
+}
+
+.editNote {
+    margin: 2px 2px 20px 15px;
+}
+
+
+/* ----------- BUTTONS / FORMS ----------- */
+
+.editbtn,
+.delbtn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(129, 129, 129);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.delbtn {
+    margin-top: 15px;
+}
+
+
+input[type=text],
+#content {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+}
+
+
+#addnewbtn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+#backbtn {
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: black; */
+    color: black;
+    cursor: pointer;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* ----------- FOOTER ----------- */
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ----------- SCREEN SIZES ----------- */
+
+@media screen and (max-width: 769px) {
+
+    #content {
+        width: 95%;
+    }
+
+    input[type=text] {
+        width: 95%;
+    }
+}

@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="main">
+        <div class="left">
+            <h1>New Note</h1>
+        </div>
+
+        <div class="right">
+            <form action="/new" method="get">
+                <input type="submit" id="newNote" value="+" />
+            </form>
+        </div>
+    </div>
+
+    <a id="backbtn" href="/">Back</a>
+
+    <div class="mb-3 container-fluid">
+        <p class="error">
+            <%= locals.error ? error : '' %>
+        </p>
+        <form action="/add" method="post">
+            <input type="text" class="form-control mb-3" name="title" value="" placeholder="Title" autofocus>
+            <textarea id="content" class="form-control mb-3" name="note" rows="15" placeholder="Note"></textarea>
+            <input type="submit" id="addnewbtn" value="Add Note" />
+        </form>
+    </div>
+
+
+
+    <%- include("partials/footer.ejs") %>

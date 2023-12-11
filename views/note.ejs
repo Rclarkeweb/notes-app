@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="main">
+        <div class="left">
+            <h1>Edit Note</h1>
+        </div>
+
+        <div class="right">
+            <form action="/new" method="get">
+                <input type="submit" id="newNote" value="+" />
+            </form>
+        </div>
+    </div>
+
+    <a id="backbtn" href="/">Back</a>
+
+    <p class="error">
+        <%= locals.error ? error : '' %>
+    </p>
+
+
+    <div class="mb-3 container-fluid">
+        <form action="/edit/<%= note.id %>" method="post">
+            <input type="text" class="form-control mb-3" name="newTitle" value="<%=note.title%>" placeholder="">
+            <textarea class="form-control mb-3" id="content" name="newNote" rows="9"
+                placeholder=""><%=note.note%></textarea>
+            <input type="submit" id="addnewbtn" value="Save Note" />
+        </form>
+
+        <form action="/delete/<%= note.id %>" method="post" class="editNote">
+            <input type="submit" class="delbtn" value="Delete" />
+        </form>
+    </div>
+
+
+
+    <%- include("partials/footer.ejs") %>
