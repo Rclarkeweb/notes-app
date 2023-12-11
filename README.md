@@ -42,5 +42,8 @@ You may fork or copy this project for your own **personal** use.
 Fact API from [API Ninjas](https://api-ninjas.com/api/jokes).
 
 ## Screenshot
+![image](https://github.com/Rclarkeweb/notes-app/assets/108008511/113e33b0-472a-4c59-bcb2-9211484c738f)
+![image](https://github.com/Rclarkeweb/notes-app/assets/108008511/4f325e0a-93b6-4f31-b8d7-9d12ef845f3f)
+![image](https://github.com/Rclarkeweb/notes-app/assets/108008511/008484a1-9b0f-4269-a236-26b16914b1af)
 
 
